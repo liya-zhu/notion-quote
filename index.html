@@ -163,8 +163,8 @@
                     console.log(data);
                 }
             }
-            async function updateQuoteCustom(f) {
-                const response = await fetch(f);
+            async function updateQuoteCustom("https://gist.github.com/liya-zhu/377366f46b46caa2a114c3c6a6963865.js") {
+                const response = await fetch("https://gist.github.com/liya-zhu/377366f46b46caa2a114c3c6a6963865.js");
                 const data = await response.json();
                 if (response.ok && data.length > 0) {
                     random_quote = data[Math.floor(Math.random() * data.length - 1) + 1];
